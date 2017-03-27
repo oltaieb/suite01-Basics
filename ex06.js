@@ -55,14 +55,11 @@
 function getHumanTypeByAge(nb) {
     if (nb >= 12 && nb < 18) {
         return "ado"
-    }
-    if (nb >= 18 && nb < 124) {
+    } else if (nb >= 18 && nb < 124) {
         return "adult"
-    }
-    if (nb >= 124 || nb < -1) {
+    } else if (nb >= 124 || nb < -1) {
         return "impossible... ou encore jamais vu"
-    }
-    if (nb < 12) {
+    } else if (nb < 12) {
         return "enfant"
     }
 }
