@@ -24,13 +24,12 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+function bool(nb) {
+    return nb % 2 == 0;
+}
 
 function isEven(nb) {
-    if (nb % 2 == 0) {
-        return 1;
-    } else {
-        return 0;
-    }
+    return bool(nb) == true ? 1 : 0;
 }
 
 console.log(isEven(6))
