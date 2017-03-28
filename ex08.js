@@ -42,10 +42,10 @@ function isEven(nb) {
 function isAllEven(arr) {
     for (var i = 0; i < arr.length; i++) {
         if (isEven(arr[i]) == 1) {} else {
-            return 1;
+            return 0;
         }
     }
-    return 0;
+    return 1;
 }
 
 console.log(isAllEven([4, 5, 6]));
