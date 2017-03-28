@@ -41,7 +41,7 @@ function isEven(nb) {
 
 function isAllEven(arr) {
     for (var i = 0; i < arr.length; i++) {
-        if (isEven(arr[i]) == 1) {} else {
+        if (isEven(arr[i]) == 0) {
             return 0;
         }
     }
