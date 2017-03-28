@@ -39,3 +39,27 @@
 // ]);
 
 //  écrire votre code sous ce commentaire
+
+function shoppingList(paniers) {
+    var item = {};
+    var x;
+    for (var a in paniers) {
+        for (var b in paniers[a]) {
+            if (typeof item[paniers[a][b]] === typeof x) {
+                item[paniers[a][b]] = 0;
+            }
+            item[paniers[a][b]] += 1;
+        }
+    }
+    return item;
+}
+
+var result = shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]);
+
+console.log(result);
