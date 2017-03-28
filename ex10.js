@@ -18,3 +18,22 @@
 
 */
 
+
+
+function isAdult(age) {
+    var test = "";
+    if (age >= 18) {
+        test = "majeur";
+    } else {
+        test = "mineur";
+    }
+    return test;
+}
+
+function getPerson(firstName, lastName, age) {
+    var fullName = "toto" + " " + "tata";
+    var person = { nom: fullName, age: 45, statut: isAdult(45) }
+    return person
+}
+
+console.log(getPerson())
