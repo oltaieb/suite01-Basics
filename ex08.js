@@ -31,3 +31,22 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nb) {
+    if (nb % 2 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function isAllEven(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (isEven(arr[i]) == 1) {} else {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
